@@ -327,7 +327,7 @@ int ServerManager::getServerId(Client &client)
                 {
                     if (host == this->servers[i].server_name.at(j))
                     {
-                        if (this->servers[client.serverID].listen.front() == this->servers[i].listen.front())
+                        if (this->servers[i].listen.size() > 0 && this->servers[client.serverID].listen.front() == this->servers[i].listen.front())
                             return i;
                     }
                 }
