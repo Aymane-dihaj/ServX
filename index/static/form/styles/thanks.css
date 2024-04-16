@@ -1,0 +1,37 @@
+.step-5
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.step-5 > img{
+    width: 100px;
+}
+
+.thanks-text
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: -50px;
+    gap: 15px;
+}
+
+.thanks-text > h1
+{
+    color: var(--Dark-Marine-blue);
+    font-size: 28px;
+}
+
+.thanks-text > p
+{
+    text-align: center;
+    font-size: 15px;
+    width: 70%;
+    letter-spacing: 0.5px;
+    color: var(--Cool-gray);
+}

@@ -1,0 +1,78 @@
+:root
+{
+    --Marine-blue: hsl(213, 96%, 28%);
+    --Dark-Marine-blue: hsl(213, 96%, 20%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.step-3 > form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    gap: 30px;
+    padding: 20px;
+    padding-left: 45px;
+}
+
+.description > label
+{   
+    font-weight: bold;
+}
+
+.price
+{
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    color: var(--Purplish-blue);
+}
+
+
+.description > small
+{
+    color: var(--Cool-gray);
+    font-weight: bold;
+}
+
+.box
+{
+    width: 90%;
+    border: 1px solid var(--Cool-gray);
+    border-radius: 5px;
+    display: flex;
+    height: 70px;
+    padding: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.online
+{
+    width: 17px;
+    height: 27px;
+    cursor: pointer;
+
+}
+
+.selected-addons
+{
+    border-color: var(--Purplish-blue);
+    background-color: var(--Magnolia);
+}

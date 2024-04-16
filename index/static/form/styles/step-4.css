@@ -1,0 +1,110 @@
+:root
+{
+    --Marine-blue: hsl(213, 96%, 28%);
+    --Dark-Marine-blue: hsl(213, 96%, 20%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+    --dark-blue: #112746;
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(240, 2%, 19%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.selection-box
+{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 70%;
+    margin: 50px;
+    background-color: hsl(240, 17%, 98%);
+    padding: 30px;
+}
+
+.selection-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+}
+
+
+.selected-plan
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid green; */
+
+}
+
+.selected-plan:first-child
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+hr
+{
+    width: 380px;
+    display: flex;
+    align-self: center;
+    background-color: var(--Light-gray);
+    opacity: 0.3;
+}
+
+.total
+{
+    /* border: 3px solid red; */
+    font-size: 14px;
+    color: var(--Cool-gray);
+}
+
+.total-section
+{
+    width: 70%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-price
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Purplish-blue);
+}
+
+.selected-addon
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+}
+
+.addons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.selected-addon > p
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+
+.selected-addon > span
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 103, 0);
+}

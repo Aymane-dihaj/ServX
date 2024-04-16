@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/pngwing.com.png">
+  <link rel="stylesheet" href="index.css" id="style-el">
+  <title>Calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div id="theme-settings">
+        <h2>Calc</h2>
+      </div>
+      <div id="dammy">
+        <p>THEME</p>
+          <div class="toggle-btn">
+          <input type="radio" class="button" name="toggle" id="one">
+          <input type="radio" class="button" name="toggle" id="two">
+        </div>
+      </div>
+    </header>
+    <div class="screen">
+      <p id="screen-content"></p>
+    </div>
+    <div class="keys-container">
+      <div class="row-container">
+        <input class="buttons" type="button" value="7">
+        <input class="buttons" type="button" value="8">
+        <input class="buttons" type="button" value="9">
+        <input class="buttons del-btn" type="button" value="DEL">
+      </div>
+      <div class="row-container">
+        <input class="buttons" type="button" value="4">
+        <input class="buttons" type="button" value="5">
+        <input class="buttons" type="button" value="6">
+        <input class="buttons" type="button" value="+">
+      </div>
+      <div class="row-container">
+        <input class="buttons" type="button" value="1">
+        <input class="buttons" type="button" value="2">
+        <input class="buttons" type="button" value="3">
+        <input class="buttons" type="button" value="-">
+      </div>
+      <div class="row-container">
+        <input class="buttons" type="button" value=".">
+        <input class="buttons" type="button" value="0">
+        <input class="buttons" type="button" value="÷">
+        <input class="buttons" type="button" value="x">
+      </div>
+      <div class="row-container last">
+        <input class="buttons reset-btn" type="button" value="RESET">
+      <input class="buttons equal-btn" type="button" value="=">
+      </div>
+    </div>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

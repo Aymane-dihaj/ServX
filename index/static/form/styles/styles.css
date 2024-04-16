@@ -1,0 +1,245 @@
+:root
+{
+    --Marine-blue: hsl(213, 96%, 28%);
+    --Dark-Marine-blue: hsl(213, 96%, 20%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+html
+{
+    font-family: "Ubuntu", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+body
+{
+    background-color: var(--Magnolia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container
+{
+    border: 3px solid red;
+    width: 70%;
+    height: 80%;
+    background-color: var(--White);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    animation: slid-down 0.6s ease-in-out;
+}
+
+@keyframes slid-down {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#side-bar
+{
+    background-image: url('../assets/images/bg-sidebar-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    font-size: 15px;
+    animation: slid-right 0.5s ease-in-out;
+}
+
+@keyframes slid-right {
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+
+.circle
+{
+    border: 1px solid var(--Light-gray);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: var(--Light-gray);
+}
+
+.step-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.step-content > p
+{
+    font-size: 13px;
+    color: var(--Light-gray);
+}
+
+.step-content > b
+{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+.stp
+{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.active .circle
+{
+    background-color: var(--Light-blue);
+    color: var(--Dark-Marine-blue);
+}
+
+.header
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.header > h1
+{
+    color: var(--Dark-Marine-blue);
+}
+
+.header p
+{
+    color: var(--Cool-gray);
+}
+
+
+.btns
+{
+    position: absolute;
+    bottom: 13%;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btns > button
+{
+    width: 25%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -200px;
+    font-size: 16px;
+    background-color: var(--Marine-blue);
+    color: white;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.next-step{
+    animation: ;
+}
+
+@keyframes slid-left {
+    
+}
+
+.btns > .next-step:hover
+{
+    cursor: pointer;
+    background-color: var(--Strawberry-red);
+}
+
+.btns > button:hover
+{
+    cursor: pointer;
+}
+
+.step-2, .step-3, .step-4, .step-5, .err
+{
+    display: none;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.err
+{
+    color: red;
+    font-size: 13px;
+    width: max-content;
+    height: max-content;
+    padding-left: 5px;
+}
+
+.bonus
+{
+    width: 100%;
+    font-size: 12px;
+    display: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+}
+

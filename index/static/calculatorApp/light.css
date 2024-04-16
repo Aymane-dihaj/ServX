@@ -1,0 +1,76 @@
+@import "index.css";
+
+:root
+{
+
+    --Light-gray-main-background: hsl(0, 0%, 90%);
+    --Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+    --Very-light-gray-screen-background: hsl(0, 0%, 93%);
+    
+    /*#### Keys*/
+    --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+    --Very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+    
+    --Orange-key-background-toggle: hsl(25, 98%, 40%);
+    --Dark-orange-key-shadow: hsl(25, 99%, 27%);
+    
+    --Light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+    --Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+    
+    /*Text*/
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White-text-: hsl(0, 0%, 100%);
+}
+
+body
+{
+    background-color: var(--Dark-grayish-orange-key-shadow);
+}
+
+header{
+    color: black;
+}
+
+.screen
+{
+    background-color: var(--Very-light-gray-screen-background);
+    color: red;
+}
+
+#screen-content
+{
+    color: black;
+}
+
+.keys-container
+{
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+}
+
+.buttons
+{
+    background-color: var(--Light-grayish-yellow-key-background);
+    color: black;
+    box-shadow: 0px 4px 0px 0px var(--Dark-grayish-orange-key-shadow);
+}
+
+.reset-btn
+{
+    background-color: var(--Dark-moderate-cyan-key-background);
+    color: white;
+    box-shadow: 0px 4px 0px 0px var(--Very-dark-cyan-key-shadow);
+}
+
+.equal-btn
+{
+    background-color: var(--Orange-key-background-toggle);
+    box-shadow: 0px 4px var(--Dark-orange-key-shadow);
+    color: white;
+}
+
+.del-btn
+{
+    background-color: var(--Dark-moderate-cyan-key-background);
+    color: white;
+    box-shadow: 0px 4px 0px 0px var(--Very-dark-cyan-key-shadow);
+}
