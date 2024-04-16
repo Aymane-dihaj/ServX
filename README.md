@@ -3,6 +3,7 @@ This project is about building a HTTP Webserver usding c/c++
 
 
 **WHAT IS HTTP ?**
+
     The *Hypertext Transfer Protocol* (HTTP) is an application protocol for distributed,collaborative, hypermedia information systems.
     HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the     user can easily access.
 
